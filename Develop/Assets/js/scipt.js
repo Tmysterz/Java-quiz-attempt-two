@@ -8,17 +8,17 @@ var answerChoicesEl = document.getElementById('answerCheck');
 var timerEl = document.getElementById("time-left");
 
 startButton.addEventListener("click", startQuiz);
-
+//activates when ever start button is clicked
 function startQuiz() {
     document.getElementById("start-container").style.display = "none";
     document.getElementById("quiz-container").style.display = "block";
     startButton.setAttribute('class', 'hide');
-
+    
     loadQuestion();
 
     timerInterval = setInterval(updateTimer, 1000);
 }
-
+//loads question and answer choices
 function loadQuestion () {
     var currentQuestion = questions[questionIndex];
 
@@ -37,5 +37,15 @@ function loadQuestion () {
         choiceEl.textContent = i + 1 + '. ' + choice;
 
         choicesDiv.appendChild(choiceEl);
+    }
+}
+
+// timer starts once start button is clicked
+function updateTimer() {
+    timerEl.textContent = timeLeft;
+    if(timeLeft === 0) {
+        clearInterval(timerInterval);
+    } else {
+        timeLeft--
     }
 }
