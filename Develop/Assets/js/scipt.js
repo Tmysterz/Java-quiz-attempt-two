@@ -33,5 +33,9 @@ function loadQuestion () {
 
         choiceEl.setAttribute('class', 'choice');
         choiceEl.setAttribute('value',  choice);
+
+        choiceEl.textContent = i + 1 + '. ' + choice;
+
+        choicesDiv.appendChild(choiceEl);
     }
 }
