@@ -88,8 +88,13 @@ section {
     margin-top: 50px;
 }
 
-
-  
 .hide{
     display: none;
+}
+
+#highScoreList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }

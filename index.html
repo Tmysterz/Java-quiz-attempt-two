@@ -12,7 +12,7 @@
 
 <body>
     <header class="headerStyle">
-        <a href="">View High Scores</a>
+        <a href="#highScoreList">View High Scores</a>
         <button id="start-button">Start</button>
         <div>Time: <span id="time-left">0</span></div>
     </header>
@@ -25,6 +25,13 @@
                 <div id="choices" class="choices"></div>
                 <div id="answerCheck" class="answerCheck"></div>
             </div>
+            <div class="hide" id="scoreForm">
+                <label>Enter Initials</label>
+                <input id="initials" >
+                <p>Score: <span id="highScore"></span></p>
+                <button id="highScoreBtn">Submit</button>
+            </div>
+            <div id="highScoreList"></div>
         </div>
     </section>
 

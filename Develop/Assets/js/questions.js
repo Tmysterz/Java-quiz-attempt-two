@@ -20,7 +20,7 @@ var questions = [
 
     {
         title: "How do you break a line of code?",
-        choice: ["<next>", "<skip>", "<br>", "<other>"],
+        choice: ["<next>", "<skip>", "<br>", "<line>"],
         correctAnswer: "<br>",
     },
 
