@@ -81,3 +81,10 @@ function checkAnswer() {
 //         answerChoicesEl.textContent = "Correct";
 //     }
 // }
+
+
+// to do
+// 
+// finish the ability to present another question and answer choices after clicking a answer
+// 
+// add the ability to save my initials and score
