@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Javascript Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="./Develop/Assets/css/style.css" />
+</head>
+
+<body>
+    <header class="headerStyle">
+        <a href="">View High Scores</a>
+        <button id="start-button">Start</button>
+        <div>Time: <span id="time-left">0</span></div>
+    </header>
+
+    <section class="flexContainer">
+        <div class="card question-guess">
+            <div class="large-font" id="start-container">Javascript Quiz</div>
+            <div class="answerChoices" id="quiz-container" style="display: none;">
+                <div class="medium-font" id="question-text">Insert Question </div>
+                <div id="choices" class="choices"></div>
+                <div id="answerCheck" class="answerCheck"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./Develop/Assets/js/questions.js"></script>
+    <script src="./Develop/Assets/js/scipt.js"></script>
+</body>
+</html>
