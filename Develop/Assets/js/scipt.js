@@ -18,6 +18,9 @@ submitButton.addEventListener("click", saveHighScore);
 function startQuiz() {
     document.getElementById("start-container").style.display = "none";
     document.getElementById("quiz-container").style.display = "block";
+
+    document.getElementById("totalTimer").style.display = "block";
+
     startButton.setAttribute('class', 'hide');
     
     loadQuestion();
