@@ -98,3 +98,7 @@ section {
     justify-content: space-between;
 
 }
+
+.answerCheck {
+    font-size: 100px;
+}

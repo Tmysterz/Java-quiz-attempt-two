@@ -129,7 +129,7 @@ function renderHighScores() {
 
     for (var highScore of highScores) {
         
-        var container = document.createElement("div")
+        var container = document.createElement("div");
         container.style.display = "flex";
 
         var initials = document.createElement("p");
@@ -141,7 +141,6 @@ function renderHighScores() {
         container.append(initials, score);
 
         document.querySelector("#highScoreList").append(container);
-
     }
 }
 
@@ -149,6 +148,3 @@ function renderHighScores() {
 
 
 
-// to do
-// 
-// add the ability to save my initials and score
